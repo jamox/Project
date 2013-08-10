@@ -99,8 +99,8 @@
 
 <p>
   <b>Laituri / paikka:</b>
-  <% berth_string = @berth.dock_id.to_s + ' / ' + @berth.number.to_s unless @berth.nil? %>
-  <%= link_to berth_string, edit_dock_berth_path(@berth.dock_id, @berth) unless @berth.nil? %>
+  <% berth_string = @berth.dock.name.to_s + ' / ' + @berth.number.to_s if @berth %>
+  <%= link_to berth_string, edit_dock_berth_path(@berth.dock_id, @berth) if @berth %>
 </p>
 
 <p>

@@ -13,7 +13,7 @@ validates_presence_of :Liittynyt
 validates_presence_of :jasentyyppi
 validates_presence_of :Osoite
 validates_presence_of :Posti
-validates_presence_of :MatkaPuh
+#validates_presence_of :MatkaPuh
 
 validates :Nimi, :format => { :with =>  /^[\D]*$/, :message => "Ei numeroita" }
 
